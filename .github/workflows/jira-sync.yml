@@ -1,8 +1,8 @@
 name: "Sync GHAS to Jira"
 
-on:
-  schedule:
-    - cron: '*/3000 * * * *'    # trigger synchronization every 10 minutes
+#on:
+ # schedule:
+  #  - cron: '*/3000 * * * *'    # trigger synchronization every 10 minutes
 
 jobs:
   test_job:
