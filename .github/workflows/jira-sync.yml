@@ -14,5 +14,5 @@ jobs:
           jira_url: 'https://niraj-shetty.atlassian.net'
           jira_user: '${{ secrets.JIRA_USER }}'
           jira_token: '${{ secrets.JIRA_TOKEN }}'
-          jira_project: 'GT'
+          jira_project: 'GHAS'
           sync_direction: 'gh2jira'
