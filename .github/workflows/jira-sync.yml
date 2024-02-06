@@ -1,8 +1,8 @@
 name: "Sync GHAS to Jira"
 
-#on:
- # schedule:
-  #  - cron: '*/3000 * * * *'    # trigger synchronization every 10 minutes
+on:
+ schedule:
+ - cron: '0 */10 * * *'    # trigger synchronization every 10 hours minutes
 
 jobs:
   test_job:
@@ -11,7 +11,7 @@ jobs:
       - name: Sync alerts to Jira issues
         uses: github/ghas-jira-integration@v1
         with:
-          jira_url: '<INSERT JIRA SERVER URL>'
+          jira_url: 'https://niraj-shetty.atlassian.net'
           jira_user: '${{ secrets.JIRA_USER }}'
           jira_token: '${{ secrets.JIRA_TOKEN }}'
           jira_project: 'GT'
